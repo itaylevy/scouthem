@@ -1,0 +1,58 @@
+package scouthem;
+
+import java.util.LinkedList;
+
+public class scout extends player_List{
+	
+	private String scoutName;
+	private String password;
+	private LinkedList<player> InterestList = new LinkedList<player>();
+	/////////////////////////////////////תכונות
+	
+	public scout() {
+	
+	}
+	public scout(String scoutName, LinkedList<player> InterestList) {
+		super();
+		this.scoutName = scoutName;
+		this.InterestList = null;
+	}
+	////////////////////////////////////set&get
+	
+	public String getScoutName() {
+		return scoutName;
+	}
+	public void setScoutName(String scoutName) {
+		this.scoutName = scoutName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public LinkedList<player> getInterestList() {
+		return InterestList;
+	}
+	public void setListPlayers(LinkedList<player> InterestList) {
+		this.InterestList = InterestList;
+	}
+	///////////////////////////////////פונקציות
+		
+	public player getPlayerInformatin()
+	{
+		return null;
+		
+	}
+	public void addPlayer()
+	{
+		
+	}
+	public void removePlayer(int idPlayer)
+	{
+		
+	}
+    public LinkedList<player>showInterestList() {
+		return InterestList;
+		}
+}

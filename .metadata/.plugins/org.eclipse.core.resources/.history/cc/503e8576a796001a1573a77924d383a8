@@ -1,0 +1,45 @@
+package scouthem;
+
+import java.util.ArrayList;
+
+public class player_List {
+
+	private ArrayList<player> listPlayer = new ArrayList<player>();
+	/////////////////////////////////////////
+	
+	public player_List(player p1) {
+		super();
+		this.listPlayer.add(p1);
+	}
+	////////////////////////////////////////
+	
+	public HashSet<player> getListPlayer() {
+		return listPlayer;
+	}
+	public void setListPlayer(HashSet<player> listPlayer) {
+		this.listPlayer = listPlayer;
+	}
+	/////////////////////////////////////////
+	
+	public HashSet<player> sortByNumOfAssists()
+	{
+		return listPlayer;
+		
+	}
+	public HashSet<player> sortByNumOfGoals()
+	{
+		return listPlayer;
+		
+	}
+	public HashSet<player> sortByRole()
+	{
+		return listPlayer;
+		
+	}
+	public HashSet<player> sortByTotalPlayingTime()
+	{
+		return listPlayer;
+		
+	}
+
+}

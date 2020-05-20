@@ -1,0 +1,135 @@
+package scouthem;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class player{
+	
+	private String playerName;
+	private String role;
+	private int age;
+	private double height;
+	private double weight;
+	private String mail;
+	private int yellowCard;
+	private int redCard;
+	private int totalPlayingTime;
+	private int numOfAssists;
+	private int goals;
+	private int idPlayer;
+	private Set<game> setOfGames = new HashSet<game>();
+	//////////////////////////////////////////
+	
+	public player(String playerName, String role, int age, double height, double weight, String mail, int yellowCard, int redCard, int totalPlayingTime, int numOfAssists,
+			int goals, Set<game> setOfGames, int idPlayer ) {
+		this.playerName=playerName;
+		this.role=role;
+		this.age=age;
+		this.height=height;
+		this.weight=weight;
+		this.mail=mail;
+		this.idPlayer=idPlayer;
+		this.setOfGames=null;
+	}
+	/////////////////////////////////////////
+	
+	public String getPlayerName() {
+		return playerName;
+	}
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	public double getWeight() {
+		return weight;
+	}
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+	public int getYellowCard() {
+		return yellowCard;
+	}
+	public void setYellowCard(int yellowCard) {
+		this.yellowCard = yellowCard;
+	}
+	public int getRedCard() {
+		return redCard;
+	}
+	public void setRedCard(int redCard) {
+		this.redCard = redCard;
+	}
+	public int getTotalPlayingTime() {
+		return totalPlayingTime;
+	}
+	public void setTotalPlayingTime(int totalPlayingTime) {
+		this.totalPlayingTime = totalPlayingTime;
+	}
+	public int getNumOfAssists() {
+		return numOfAssists;
+	}
+	public void setNumOfAssists(int numOfAssists) {
+		this.numOfAssists = numOfAssists;
+	}
+	public int getGoals() {
+		return goals;
+	}
+	public void setGoals(int goals) {
+		this.goals = goals;
+	}
+	public int getIdPlayer() {
+		return idPlayer;
+	}
+	public void setIdPlayer(int idPlayer) {
+		this.idPlayer = idPlayer;
+	}
+////////////////////////////////////////////////
+		
+	@Override
+	public String toString() {
+		return "player -  [playerName=" + playerName + ", idPlayer=" + idPlayer + ", role=" + role + "\n" + ", age=" + age + ", height=" + height
+				+ ", weight=" + weight + "\n" + ", mail=" + mail + ", yellowCard=" + yellowCard + ", redCard=" + redCard
+				+ "\n" + ", totalPlayingTime=" + totalPlayingTime + ", numOfAssists=" + numOfAssists + ", goals=" + goals
+				+ "\n" + ", listOfGames=" + setOfGames + "]";
+	}	
+
+	public void editInformation()
+	{
+		
+	}
+	
+	public boolean addGame(game p)
+	{
+		return setOfGames.add(p);		
+	}
+	
+	public Set<game> showListOfGames()
+	{
+		return setOfGames;
+
+	}
+	
+
+}

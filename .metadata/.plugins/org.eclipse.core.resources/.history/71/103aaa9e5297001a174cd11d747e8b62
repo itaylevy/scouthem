@@ -1,0 +1,50 @@
+package scouthem;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//יצירת שחקן חדש
+		player p = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p1 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p2 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p3 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p4 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p5 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p6 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		player p7 = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231,"Mc1527101215");
+		
+		   	    
+	    //הכנסה לרשימה
+	    player_List players = new player_List();
+	    players.addplayer(p);
+	    players.addplayer(p1);
+	    players.addplayer(p2);
+	    players.addplayer(p3);
+	    players.addplayer(p4);
+	    players.addplayer(p5);
+	    players.addplayer(p6);
+	    players.addplayer(p7);
+	    
+	    //יצירת משחק לשחקן
+	    game g = new game("15.5.20",1,0,94,"Beitar Jerusalem",2,1);
+	    game g1 = new game("17.5.20",1,0,94,"maccabi hanazim",2,1);
+	    game g2 = new game("21.5.20",1,0,94,"maccabi haifa",2,1);
+	    
+	    //הכנסה של משחק לרשימה שחקן
+	   p.addGame(g);
+	   p1.addGame(g1);
+	   p2.addGame(g);
+	   p3.addGame(g1);
+	   p4.addGame(g2);
+	   p5.addGame(g);
+	   p6.addGame(g2);
+	   p7.addGame(g1);
+
+	    //הדפסת הרשימה
+		System.out.println(players.getListPlayer());	
+
+		
+	}
+
+}

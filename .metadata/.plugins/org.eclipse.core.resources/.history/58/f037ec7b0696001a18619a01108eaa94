@@ -1,0 +1,5 @@
+package scouthem;
+
+public interface user {
+
+}

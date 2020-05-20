@@ -1,0 +1,37 @@
+package scouthem;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//יצירת שחקן חדש
+		player p = new player("mor","balam",27,1.83,76.5,"morcohen1515@gmail.com",204272231);
+		player p1 = new player();
+
+	   	    
+	    //הכנסה לרשימה
+	    player_List players = new player_List();
+	    players.addplayer(p);
+	    players.addplayer(p1);
+	    
+	    //יצירת משחק לשחקן
+	    game g = new game("15.5.20",1,0,94,"Beitar Jerusalem",2,1);
+	    game g1 = new game("17.5.20",1,0,94,"maccabi hanazim",2,1);
+	    game g2 = new game("21.5.20",1,0,94,"maccabi haifa",2,1);
+	    
+	    //הכנסה של משחק לרשימה שחקן
+	    p.addGame(g);
+	    p.addGame(g1);
+	    p.addGame(g2);
+	    p1.addGame(g);
+	    p1.addGame(g1);
+	    p1.addGame(g2);
+
+	    //הדפסת הרשימה
+		System.out.println(p.toString());
+	    System.out.println(p.showListOfGames());	
+	    System.out.println(p1.toString());
+	    System.out.println(p1.showListOfGames());	
+	}
+
+}

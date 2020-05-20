@@ -1,0 +1,54 @@
+package scouthem;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class player_List {
+
+	private Set<player> listPlayer = new HashSet<player>();
+	/////////////////////////////////////////
+	
+	public player_List() {
+
+	}
+	
+	public player_List(player p1) {
+		super();
+		this.listPlayer.add(p1);
+	}
+	////////////////////////////////////////
+	
+	public Set<player> getListPlayer() {
+		return listPlayer;
+	}
+	public void setListPlayer(Set<player> listPlayer) {
+		this.listPlayer = listPlayer;
+	}
+	/////////////////////////////////////////
+	
+	public boolean addplayer(player p)
+	{
+		return listPlayer.add(p);		
+	}
+	public Set<player> sortByNumOfAssists()
+	{
+		return listPlayer;
+		
+	}
+	public Set<player> sortByNumOfGoals()
+	{
+		return listPlayer;
+		
+	}
+	public Set<player> sortByRole()
+	{
+		return listPlayer;
+		
+	}
+	public Set<player> sortByTotalPlayingTime()
+	{
+		return listPlayer;
+		
+	}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Mor cohen\Desktop\HIT\שנה ב\סמסטר ב\הנדסת תוכנה\פרויקט\מימוש\.metadata\.plugins\org.eclipse.jdt.core
+2971701134.index
+2876152739.index

@@ -1,0 +1,6 @@
+package scouthem;
+
+public interface user {
+	public void singUp();
+	public void logIn();
+}
